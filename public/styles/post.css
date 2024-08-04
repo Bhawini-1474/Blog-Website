@@ -1,0 +1,76 @@
+
+body{
+    background-color: rgb(66, 61, 54);
+    margin: 0;
+    background-image: url("/images/cofee.jpg!w700wp");
+    background-size: cover;
+    
+}
+
+.container{
+    color:antiquewhite;
+    text-align: center;
+    margin-left: 170px;
+    margin-right:30px;
+    height:100%;
+    margin-top: 80px;
+    padding-top: 60px;
+    background: rgba(128, 128, 128, 0.8); 
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+h1{
+  font-size: 40px;
+  font-family: "Lumanosimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #faf7f5;
+  margin-bottom: 20px;
+}
+.para{
+  font-size: 20px;
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "BNCE" 0, "INFM" 0, "SPAC" 0;
+  color: #f8f6f5;
+  margin-top: 20px;
+  text-align: center;
+  white-space: pre-wrap;
+  padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(161, 238, 161);
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: "Lumanosimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn-danger {
+  background-color: #7d6c6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-danger:hover {
+  background-color: #dc6068;
+}
+
+.form{
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}

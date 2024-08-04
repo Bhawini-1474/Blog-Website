@@ -1,0 +1,49 @@
+<%- include("partials/header.ejs")%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScriptAway</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="wrapper">
+    <div class="container">
+      <div class="heading"><h1>Blog Away!</h1></div>
+      <div class="form">
+        <form action="/submit" method="post">
+          <div>
+            <textarea id="content" name="content" required></textarea>
+          </div><br/>
+          <div><button type="submit" class="btn">Save</button></div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="subheading"><h2>Your Blogs</h2></div>
+      <div class="title-list">
+        <ol>
+          <% posts.forEach((post) =>{%>
+          <li><a href="/posts/<%=post.id%>"><%=post.title%></a></li>
+          <%})%>
+        </ol>
+      </div>
+    </div>
+</div>
+
+    <div class="background-image"></div>
+    
+</div>
+
+    
+   
+  </body>
+</html>
